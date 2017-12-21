@@ -1,0 +1,62 @@
+##############################################################################
+#                                                                            #
+#    The following config file will allow you to customize settings within   #
+#    venom tool, The lines that Do not have comment code ("#") are the       #
+#    fields you want to toy with. There are additional options, read the     #
+#    comments For additional config settings.                                #
+#                                                                            #
+#    CHANGING THIS SETTINGS WILL AFFECT 'Trojanizer.sh' WAY OF WORKING       #
+#                                                                            #
+##############################################################################
+
+
+
+
+### Local system arch (32bit/64bit)
+# This next setting forces the main tool (Trojanizer.sh) to use WINE32
+# or WINE64 command syntax to install dependencies or run winrar.exe
+# values accepted are: x64 or x86
+---------------
+SYSTEM_ARCH=x86
+---------------
+
+
+### Replace SFX logo (image.bmp) in the created sfx archive
+# Image size default is 93x302 pixels (use the same or smaller)
+# values accepted are: OFF or ON
+------------
+USE_LOGO=OFF
+------------
+
+
+### WinRAR Presetup sfx funtion to exec program/command before extraction
+# HINT: program must allready exists on disk (target system) example:
+# powershell.exe -nop -wind hidden -Exec Bypass -noni -enc TfD3DvcHtLhiSmoT==
+# values accepted are: OFF or ON
+-------------
+PRE_SETUP=OFF
+-------------
+
+
+### Wine drive_c full install path (local)
+# HINT: execute winecfg to build the required folders or
+# change this value to point to your wine drive_c install path
+-----------------------------
+WINE_PATH=/root/.wine/drive_c
+-----------------------------
+
+
+### WinRAR.exe full install path (inside-wine)
+# HINT: based on the local system arch used,
+# winrar.exe migth be installed under: Program Files OR Program Files(x86)
+---------------------------------------------------------------
+WINRAR_PATH=/root/.wine/drive_c/Program Files/WinRAR/WinRAR.exe
+---------------------------------------------------------------
+
+
+
+
+_EOF
+
+
+
