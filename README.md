@@ -59,14 +59,14 @@
     |       and they can only be configurated before running the main tool (Trojanizer.sh)    |
     ╚─────────────────────────────────────────────────────────────────────────────────────────╝
 
-   **-- Presetup advanced option**
+   **-- Presetup advanced option**<br />
    Trojanizer can be configurated to execute a program/command before the extraction/execution
    of the two compressed files inside the SFX archive. This setting allow users to take advantage
    of installed software to execute a remote command before the sfx extraction occurs ..
 ![venom shellcode v1.0.13](http://i.cubeupload.com/ZseeuS.png)<br />
 
 
-   **-- single_file_execution**
+   **-- single_file_execution**<br />
    Lets look at the follow scenario: You have a dll payload to input that you need to execute
    upon extraction, but sfx archives can not execute directly dll files, This setting allow
    users to input one batch script(.bat) that its going to be used to execute the dll payload,
