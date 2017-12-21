@@ -11,7 +11,7 @@
     Distros Supported : Ubuntu, Kali, Mint, Parrot OS
     Suspicious-Shell-Activity (SSA) RedTeam develop @2017
 
-![venom shellcode v1.0.13](http://i.cubeupload.com/bYQJc8.png)
+![venom shellcode v1.0.13](http://i.cubeupload.com/bYQ6Jc8.png)
 
 <br />
 
@@ -37,7 +37,6 @@
 
 ## PAYLOADS (agents) ACCEPTED
     .exe | .bat | .vbs | .ps1
-    "All agents that windows system can auto-execute"
 
 
 ## LEGIT APPLICATIONS ACCEPTED
@@ -63,9 +62,9 @@
 
 
 ## Framework Screenshots
-![venom shellcode v1.0.13](http://i.cubeupload.com/6yNJGG.png)
-![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/n7Nxee.png)
-![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/jWpjf3.png)
+![venom shellcode v1.0.13](http://i.cubeupload.com/6yNJGG4.png)
+![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/n7N6xee.png)
+![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/jWpj7f3.png)
 
 
 <br />

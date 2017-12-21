@@ -137,23 +137,6 @@ Colors;
 echo ${YellowF}['!']${white} Checking backend applications ..${Reset};
 sleep 1
 #
-# search for zenity intallation ..
-#
-apc=`which zenity`
-if [ "$?" != "0" ]; then
-  FaIl="YES"
-  echo ${RedF}[x]${white} Zenity installation '->' not found!${Reset};
-  sleep 1
-  echo ${RedF}[x]${white} This script requires Zenity to work!${Reset};
-  echo ${YellowF}['!'] Please wait: installing missing dependencies ..${Reset};
-  echo ""
-  sudo apt-get install zenity
-  echo ""
-else
-  echo ${BlueF}[☆]${white}" Zenity installation   : ${GreenF}found!"${Reset};
-  sleep 1
-fi
-#
 # search for wine intallation ..
 #
 apc=`which $arch`
@@ -206,6 +189,23 @@ else
       $arch install_winrar_wine64.exe
       cd $IPATH
     fi
+fi
+#
+# search for zenity intallation ..
+#
+apc=`which zenity`
+if [ "$?" != "0" ]; then
+  FaIl="YES"
+  echo ${RedF}[x]${white} Zenity installation '->' not found!${Reset};
+  sleep 1
+  echo ${RedF}[x]${white} This script requires Zenity to work!${Reset};
+  echo ${YellowF}['!'] Please wait: installing missing dependencies ..${Reset};
+  echo ""
+  sudo apt-get install zenity
+  echo ""
+else
+  echo ${BlueF}[☆]${white}" Zenity installation   : ${GreenF}found!"${Reset};
+  sleep 1
 fi
 #
 # Restart tool after dependencies installs (FaIl="YES")
@@ -276,7 +276,8 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
      if [ "$Ext" = "exe" ] || [ "$Ext" = "bat" ] || [ "$Ext" = "vbs" ] || [ "$Ext" = "ps1" ]; then
        echo "nothing" > /dev/null 2>&1
      else
-       echo ${RedF}[x]${white} Extension inputed not compatible:${RedF} .$Ext ${Reset};
+       echo ${RedF}[x]${white} Payload inputed not compatible:${RedF} .$Ext ${Reset};
+       echo ${RedF}[x] Abort${white} framework execution .. ${Reset};
        sleep 2
        exit
      fi
