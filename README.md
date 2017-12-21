@@ -11,7 +11,7 @@
     Distros Supported : Ubuntu, Kali, Mint, Parrot OS
     Suspicious-Shell-Activity (SSA) RedTeam develop @2017
 
-![venom shellcode v1.0.13](http://i.cubeupload.com/bYQ6Jc8.png)
+![venom shellcode v1.0.13](http://cubeupload.com/im/e0e0V1.png)
 
 <br />
 
@@ -26,7 +26,7 @@
     To activate the Presetup funtion: [ settings -> PRE_SETUP=ON ]
 
    **'This tool will not build real trojans, but from target perpective it will behave like one'**.<br />
-   (execute the payload in background, while the legit application also executes).
+   (execute the payload in background, while the legit application also executes in foreground).
 
 <br /><br />
 

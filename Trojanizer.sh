@@ -405,7 +405,7 @@ sleep 2
       #
       if [ "$LoGo" = "ON" ]; then
         # strip forward slashs from path (unix), and replace them by backslashs (windows-wine)
-        echo ${YellowF}['!']${white}" EXTRA: Replacing SFX archive logo .."${Reset};
+        echo ${YellowF}['!']${white}" Replacing SFX archive logo (image.bmp).."${Reset};
         echo "$logo_path" > $IPATH/output/rep.log
         sed -i 's|/|\\|g' $IPATH/output/rep.log
         LPATH=`cat $IPATH/output/rep.log`
