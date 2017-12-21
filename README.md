@@ -11,7 +11,7 @@
     Distros Supported : Ubuntu, Kali, Mint, Parrot OS
     Suspicious-Shell-Activity (SSA) RedTeam develop @2017
 
-![venom shellcode v1.0.13](http://i.cubeupload.com/FkPpwp.png)
+![venom shellcode v1.0.13](http://i.cubeupload.com/xLyAG8.png)
 
 <br />
 
@@ -62,8 +62,9 @@
 
 
 ## Framework Screenshots
-![venom shellcode v1.0.13](http://i.cubeupload.com/6yNJGG4.png)<br />
-![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/n7N6xee.png)<br />
+**example of xsf.conf file**
+![venom shellcode v1.0.13](http://i.cubeupload.com/QJ3D2L.png)<br />
+![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
 ![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/jWpj7f3.png)<br />
 
 
