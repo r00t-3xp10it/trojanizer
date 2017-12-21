@@ -18,15 +18,13 @@
 ## FRAMEWORK DESCRIPTION
     The Trojanizer tool uses WinRAR (SFX) to compress two files input by user,
     and transforms it into an SFX executable(.exe) archive. The sfx archive when
-    executed it will run bouth files (our payload and the legit appl at the same time).
+    executed it will run bouth files (our payload and the legit appl inputed).
 
-    To make the archive less suspicious at execution time, trojanizer will replace
-    the default icon(.ico) of the sfx file with a user-selected one, it also allow
-    us to execute a program/command before the extraction/execution of the two files.
-    To activate the Presetup funtion: [ settings -> PRE_SETUP=ON ]
+    To make the archive less suspicious at execution time, trojanizer will try
+    to replace the default icon(.ico) of the sfx file with a user-selected one.
 
-   **'This tool will not build real trojans, but from target perpective it will behave like one'**<br />
-   (execute the payload in background, while the legit application also executes in foreground).
+   **'Trojanizer will not build real trojans, but from target perspective it will behave like one'**<br />
+   (execute the payload in background, while the legit application executes in foreground).
 
 
 <br /><br /><br />
@@ -51,6 +49,29 @@
 ## LEGIT APPLICATIONS ACCEPTED
     .exe | .bat | .vbs | .ps1 | .jpg | .bmp | .doc | .ppt | etc ..
     "All applications that windows/SFX can auto-extract-execute"
+
+<br />
+
+## ADVANCED SETTINGS
+    ╔─────────────────────────────────────────────────────────────────────────────────────────╗
+    |                                        WARNING:                                         |
+    |         Trojanizer 'advanced options' are only accessible in the 'settings' file,       |
+    |       and they can only be configurated before running the main tool (Trojanizer.sh)    |
+    ╚─────────────────────────────────────────────────────────────────────────────────────────╝
+
+   **-- Presetup advanced option**
+   Trojanizer can be configurated to execute a program/command before the extraction/execution
+   of the two compressed files inside the SFX archive. This setting allow users to take advantage
+   of installed software to execute a remote command before the sfx extraction occurs ..
+![venom shellcode v1.0.13](http://i.cubeupload.com/ZseeuS.png)<br />
+
+
+   **-- single_file_execution**
+   Lets look at the follow scenario: You have a dll payload to input that you need to execute
+   upon extraction, but sfx archives can not execute directly dll files, This setting allow
+   users to input one batch script(.bat) that its going to be used to execute the dll payload,
+   all that Trojanizer needs to Do its to execute the trigger.bat to execute your inputed payload.
+![venom shellcode v1.0.13](http://i.cubeupload.com/ptouUv.png)<br />
 
 <br /><br /><br />
 
