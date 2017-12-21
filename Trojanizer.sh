@@ -252,8 +252,6 @@ rUn=$(zenity --question --title="☠ Trojanizer ☠" --text "Execute framework?"
     #
     rm -r $IPATH/output > /dev/null 2>&1
     mkdir $IPATH/output > /dev/null 2>&1
-    echo ${BlueF}[☆]${white}" Rebuild output folder : ${GreenF}done!"${Reset};
-    sleep 2
 
 
 
@@ -342,7 +340,7 @@ cp $binary_path $IPATH/output > /dev/null 2>&1
 echo ${BlueF}[☆]${white}" Copy all files to output folder : ${GreenF}done!"${Reset};
 sleep 2
 echo ${BlueF}[☆]${white}" Extract filenames from full paths : ${GreenF}done!"${Reset};
-sleep2
+sleep 2
 
 
 
