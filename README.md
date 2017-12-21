@@ -25,7 +25,7 @@
     us to execute a program/command before the extraction/execution of the two files.
     To activate the Presetup funtion: [ settings -> PRE_SETUP=ON ]
 
-   **'This tool will not build real trojans, but from target perpective it will behave like one'**
+   **'This tool will not build real trojans, but from target perpective it will behave like one'**<br />
    (execute the payload in background, while the legit application also executes in foreground).
 
 
