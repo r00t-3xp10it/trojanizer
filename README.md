@@ -32,13 +32,13 @@
 ## DEPENDENCIES (backend applications)
     Zenity | Wine (x86|x64) | WinRAr.exe (wine)
     "Trojanizer.sh will download/install all dependencies as they are needed"
-    ╔─────────────────────────────────────────────────────────────────────────────────────────╗
-    |                                        WARNING:                                         |
-    |        It is recomended to edit and config the option: SYSTEM_ARCH=[your_sys_arch]      |
-    |        in the 'settings' file before attempting to run the tool for the first time.     |
-    |        That will instruct Trojanizer to install/run backend appl based on sys arch      |
-    ╚─────────────────────────────────────────────────────────────────────────────────────────╝
-![venom shellcode v1.0.13](http://i.cubeupload.com/wp5f1V.png)<br />
+   ╔─────────────────────────────────────────────────────────────────────────────────────────╗
+   |                                        WARNING:                                         |
+   |        It is recomended to edit and config the option: SYSTEM_ARCH=[your_sys_arch]      |
+   |        in the 'settings' file before attempting to run the tool for the first time.     |
+   |        That will instruct Trojanizer to install/run backend appl based on sys arch      |
+   ╚─────────────────────────────────────────────────────────────────────────────────────────╝
+![venom shellcode v1.0.13](http://i.cubeupload.com/nIV8rl.png)<br />
 
 <br />
 
