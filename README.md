@@ -1,4 +1,4 @@
-[![Version](https://img.shields.io/badge/TROJANIZER-brightgreen.svg?maxAge=259200)]()
+[![Version](https://img.shields.io/badge/Trojanizer-v1.0-brightgreen.svg?maxAge=259200)]()
 [![Stage](https://img.shields.io/badge/Release-Beta-orange.svg)]()
 [![Build](https://img.shields.io/badge/Supported_OS-Linux-orange.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
@@ -24,7 +24,7 @@
     to execute a program/command before the extraction/execution of the two files.
     To activate the Presetup funtion: [ settings -> PRE_SETUP=ON ]
 
-   'This tool will not build real trojans, but from target perpective it behaves like one' ..
+   'This tool will not build real trojans, but from target perpective it behaves like one'.<br />
    (hidde the payload execution while the legit application also executes).
 
 
