@@ -32,7 +32,7 @@
 <br /><br /><br />
 
 ## DEPENDENCIES (backend applications)
-    Zenity | Wine | WinRAr.exe (wine)
+    Zenity | Wine (x86|x64) | WinRAr.exe (wine)
     "Trojanizer.sh will download/install all dependencies as they are needed"
     ╔─────────────────────────────────────────────────────────────────────────────────────────╗
     |                                        WARNING:                                         |
