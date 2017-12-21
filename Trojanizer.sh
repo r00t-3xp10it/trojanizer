@@ -390,19 +390,15 @@ sleep 2
         sed -i 's|/|\\|g' $IPATH/output/rep.log
         LPATH=`cat $IPATH/output/rep.log`
         rm $IPATH/output/rep.log > /dev/null 2>&1
-        echo ""
         #
         # Wine + Winrar onelinner bash command ..
         #
         $arch "$WINRAR_PATH" a -c -z$IPATH/bin/xsf.conf -iiconZ:$BPATH -iimageZ:$LPATH -r- -ed -s -sfx -y $N4m3
-        echo ""
       else
-        echo ""
         #
         # Wine + Winrar onelinner bash command ..
         #
         $arch "$WINRAR_PATH" a -c -z$IPATH/bin/xsf.conf -iiconZ:$BPATH -r- -ed -s -sfx -y $N4m3
-        echo ""
       fi
 
 
@@ -420,19 +416,15 @@ sleep 2
         sed -i 's|/|\\|g' $IPATH/output/rep.log
         LPATH=`cat $IPATH/output/rep.log`
         rm $IPATH/output/rep.log > /dev/null 2>&1
-        echo ""
         #
         # Wine + Winrar onelinner bash command ..
         #
         $arch "$WINRAR_PATH" a -c -z$IPATH/bin/xsf.conf -iiconZ:$BPATH\\bin\\$IcOn -iimageZ:$LPATH -r- -ed -s -sfx -y $N4m3
-        echo ""
       else
-        echo ""
         #
         # Wine + Winrar onelinner bash command ..
         #
         $arch "$WINRAR_PATH" a -c -z$IPATH/bin/xsf.conf -iiconZ:$BPATH\\bin\\$IcOn -r- -ed -s -sfx -y $N4m3
-        echo ""
       fi
 
   fi
