@@ -13,6 +13,7 @@
 
 ![venom shellcode v1.0.13](http://i.cubeupload.com/bYQJc8.png)
 
+<br />
 
 ## FRAMEWORK DESCRIPTION
     The Trojanizer tool uses WinRAR (SFX) to compress two files inserted by user,
@@ -24,10 +25,10 @@
     to execute a program/command before the extraction/execution of the two files.
     To activate the Presetup funtion: [ settings -> PRE_SETUP=ON ]
 
-   'This tool will not build real trojans, but from target perpective it behaves like one'.<br />
+   'This tool will not build real trojans, but from target perpective it will behave like one'.<br />
    (hidde the payload execution while the legit application also executes).
 
-
+<br /><br />
 
 ## DEPENDENCIES (backend applications)
     Zenity | Wine | WinRAr.exe (wine)
@@ -43,7 +44,7 @@
     .exe | .bat | .vbs | .ps1 | .jpg | .bmp | .doc | .ppt | etc ..
     "All applications that windows system can auto-execute"
 
-
+<br /><br />
 
 ## DOWNLOAD/INSTALL
     1º - Download framework from github
