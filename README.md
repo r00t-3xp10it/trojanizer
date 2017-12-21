@@ -62,9 +62,9 @@
     ╚─────────────────────────────────────────────────────────────────────────────────────────╝
 
    **-- Presetup advanced option**<br />
-   Trojanizer can be configurated to execute a program/command before the extraction/execution
-   of the two compressed files (SFX archive). This setting allow users to take advantage of installed software to
-   execute a remote command before the sfx extraction occurs ..
+   Trojanizer can be configurated to execute a program + command before the extraction/execution
+   of the two compressed files (SFX archive). This allow users to take advantage of pre-installed
+   software to execute a remote command before the extraction occurs ..
 ![venom shellcode v1.0.13](http://i.cubeupload.com/ZseeuS.png)<br />
 
 
