@@ -32,7 +32,7 @@
 
 ## DEPENDENCIES (backend applications)
     Zenity | Wine | WinRAr.exe (wine)
-    "venom.sh will download/install all dependencies as they are needed"
+    "Trojanizer.sh will download/install all dependencies as they are needed"
 
 
 ## PAYLOADS (agents) ACCEPTED

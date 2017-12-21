@@ -274,7 +274,7 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
      # Check if agent (payload) inputed its compatible with trojanizer tool
      #
      if [ "$Ext" = "exe" ] || [ "$Ext" = "bat" ] || [ "$Ext" = "vbs" ] || [ "$Ext" = "ps1" ]; then
-       echo "nothing" > /dev/null 2>&1
+       pa_in="COMPATIBLE"
      else
        echo ${RedF}[x]${white} Payload inputed not compatible:${RedF} .$Ext ${Reset};
        echo ${RedF}[x] Abort${white} framework execution .. ${Reset};
@@ -294,6 +294,16 @@ fi
 if [ "$LoGo" = "ON" ]; then
   logo_path=$(zenity --title "☠ INPUT YOUR OWN LOGO (.bmp) IMAGE ☠" --filename=$IPATH --file-selection --text "chose the image.bmp to use ..") > /dev/null 2>&1
 fi
+
+
+#
+# check settings enter before continue ..
+#
+if [ "$pa_in" = "COMPATIBLE" ]; then
+  echo ${GreenF}[☆]${white}" Trojanizer : start sfx archive compression .."${Reset};
+  sleep 1
+fi
+
 #
 # Presetup = program/command to exec before archive extractions ..
 #
@@ -331,6 +341,8 @@ ST_D=`ls | egrep -m 1 '.'` > /dev/null 2>&1
 cp $binary_path $IPATH/output > /dev/null 2>&1
 echo ${BlueF}[☆]${white}" Copy all files to output folder : ${GreenF}done!"${Reset};
 sleep 2
+echo ${BlueF}[☆]${white}" Extract filenames from full paths : ${GreenF}done!"${Reset};
+sleep2
 
 
 
@@ -380,6 +392,7 @@ sleep 2
         sed -i 's|/|\\|g' $IPATH/output/rep.log
         LPATH=`cat $IPATH/output/rep.log`
         rm $IPATH/output/rep.log > /dev/null 2>&1
+        echo ${GreenF}[☆]${white}" Trojanizer : tasks completed .."${Reset};
         echo ""
         #
         # Wine + Winrar onelinner bash command ..
@@ -387,6 +400,7 @@ sleep 2
         $arch "$WINRAR_PATH" a -c -z$IPATH/bin/xsf.conf -iiconZ:$BPATH -iimageZ:$LPATH -r- -ed -s -sfx -y $N4m3
         echo ""
       else
+        echo ${GreenF}[☆]${white}" Trojanizer : tasks completed .."${Reset};
         echo ""
         #
         # Wine + Winrar onelinner bash command ..
@@ -410,6 +424,7 @@ sleep 2
         sed -i 's|/|\\|g' $IPATH/output/rep.log
         LPATH=`cat $IPATH/output/rep.log`
         rm $IPATH/output/rep.log > /dev/null 2>&1
+        echo ${GreenF}[☆]${white}" Trojanizer : tasks completed .."${Reset};
         echo ""
         #
         # Wine + Winrar onelinner bash command ..
@@ -417,6 +432,7 @@ sleep 2
         $arch "$WINRAR_PATH" a -c -z$IPATH/bin/xsf.conf -iiconZ:$BPATH\\bin\\$IcOn -iimageZ:$LPATH -r- -ed -s -sfx -y $N4m3
         echo ""
       else
+        echo ${GreenF}[☆]${white}" Trojanizer : tasks completed .."${Reset};
         echo ""
         #
         # Wine + Winrar onelinner bash command ..
