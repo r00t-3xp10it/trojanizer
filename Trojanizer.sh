@@ -275,7 +275,7 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
        pa_in="COMPATIBLE"
      else
        echo ${RedF}[x]${white} Payload inputed not compatible:${RedF} .$Ext ${Reset};
-       echo ${RedF}[x] Abort${white} framework execution .. ${Reset};
+       echo ${RedF}[x]${white} Abort framework execution .. ${Reset};
        sleep 2
        exit
      fi
@@ -437,7 +437,6 @@ rm $IPATH/output/$ST_O > /dev/null 2>&1
 rm $IPATH/output/$ST_D > /dev/null 2>&1
 echo ${GreenF}[☆]${white}" Trojanizer : All tasks completed .."${Reset};
 zenity --info --title="☠ Trojanizer ☠" --text "Your sfx archive:\n'$IPATH/output/$N4m3.exe'" --width 380 > /dev/null 2>&1
-sleep 2
 cd $IPATH
 
 
@@ -449,9 +448,7 @@ else
     # Exit framework (abort funtion) ..
     #
     echo ""
-    echo ${white} Author${RedF}::${white}pedr0 ubuntu${RedF}::${white}[r00t-3xp10it]${Reset};
-    echo ${white} Trojanizer${RedF}::${white}v$VeR${RedF}::${white}SuspiciousShellActivity©${RedF}::${white}RedTeam${RedF}::${white}2017${Reset};
-    sleep 1
+    echo ${GreenF}[☆]${white} Trojanizer${RedF}::${white}v$VeR${RedF}::${white}SuspiciousShellActivity©${RedF}::${white}RedTeam${RedF}::${white}2017${Reset};
 exit
 fi
 
