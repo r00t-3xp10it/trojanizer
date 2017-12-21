@@ -38,11 +38,13 @@
     |        in the 'settings' file before attempting to run the tool for the first time.     |
     |        That will instruct Trojanizer to install/run backend appl based on sys arch      |
     ╚─────────────────────────────────────────────────────────────────────────────────────────╝
+![venom shellcode v1.0.13](http://i.cubeupload.com/wp5f1V.png)<br />
 
 <br />
 
 ## PAYLOADS (agents) ACCEPTED
     .exe | .bat | .vbs | .ps1
+    "All applications that windows/SFX can auto-extract-execute"
 
 <br />
 
