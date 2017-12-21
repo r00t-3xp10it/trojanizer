@@ -14,7 +14,7 @@
 
 ### Local system arch (32bit/64bit)
 # This next setting forces the main tool (Trojanizer.sh) to use WINE32
-# or WINE64 command syntax to install dependencies or run winrar.exe
+# or WINE64 command syntax to install dependencies or run internal commands.
 # values accepted are: x64 or x86
 ---------------
 SYSTEM_ARCH=x86
@@ -36,6 +36,17 @@ USE_LOGO=OFF
 -------------
 PRE_SETUP=OFF
 -------------
+
+
+### Single_file_execution, Lets look at the follow scenario:
+# you have a dll payload to input to execute upon extraction,
+# but sfx archives can not execute directly dll files ..
+# This setting allow users to input one batch script(.bat)
+# that its going to be used to execute the dll payload.
+# values accepted are: OFF or ON
+---------------
+SINGLE_EXEC=OFF
+---------------
 
 
 ### Wine drive_c full install path (local)

