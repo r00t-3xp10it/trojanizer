@@ -28,22 +28,31 @@
    **'This tool will not build real trojans, but from target perpective it will behave like one'**.<br />
    (execute the payload in background, while the legit application also executes in foreground).
 
-<br /><br />
+<br /><br /><br />
 
 ## DEPENDENCIES (backend applications)
     Zenity | Wine | WinRAr.exe (wine)
     "Trojanizer.sh will download/install all dependencies as they are needed"
 
+    ╔──────────────────────────────────────────────────────────────────────────────╗
+    |                                   WARNING:                                   |
+    |  It is recomended to edit and config the option: SYSTEM_ARCH=[your_sys_arch] |
+    |  in the 'settings' file before attempting to run the tool for the first time |
+    |  that will instruct Trojanizer to install/run backend appl                   |
+    ╚──────────────────────────────────────────────────────────────────────────────╝
+
+<br />
 
 ## PAYLOADS (agents) ACCEPTED
     .exe | .bat | .vbs | .ps1
 
+<br />
 
 ## LEGIT APPLICATIONS ACCEPTED
     .exe | .bat | .vbs | .ps1 | .jpg | .bmp | .doc | .ppt | etc ..
     "All applications that windows system can auto-execute"
 
-<br /><br />
+<br /><br /><br />
 
 ## DOWNLOAD/INSTALL
     1º - Download framework from github
@@ -59,7 +68,7 @@
     4º - Run main tool
          sudo ./Trojanizer.sh
 
-
+<br /><br />
 
 ## Framework Screenshots
 **example of xsf.conf file**
