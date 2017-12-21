@@ -16,12 +16,12 @@
 <br />
 
 ## FRAMEWORK DESCRIPTION
-    The Trojanizer tool uses WinRAR (SFX) to compress two files input by user,
+    The Trojanizer tool uses WinRAR (SFX) to compress the two files inputed by user,
     and transforms it into an SFX executable(.exe) archive. The sfx archive when
-    executed it will run bouth files (our payload and the legit appl inputed).
+    executed it will run both files (our payload and the legit appl inputed).
 
-    To make the archive less suspicious at execution time, trojanizer will try
-    to replace the default icon(.ico) of the sfx file with a user-selected one.
+    To make the archive less suspicious to target at execution time, trojanizer will
+    try to replace the default icon(.ico) of the sfx file with a user-selected one.
 
    **'Trojanizer will not build real trojans, but from target perspective it will behave like one'**<br />
    (execute the payload in background, while the legit application executes in foreground).
