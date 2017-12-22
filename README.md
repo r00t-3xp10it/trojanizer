@@ -97,10 +97,10 @@
 <br /><br />
 
 ## Framework Screenshots
-**xsf.conf - execute both files upon extraction**
+**xsf.conf - execute both files upon extraction (trojan behavior)**
 ![venom shellcode v1.0.13](http://i.cubeupload.com/QJ3D2L.png)<br />
-**xsf.conf - single_file_execution + Presetup advanced options**
-![venom shellcode v1.0.13](http://i.cubeupload.com/FWOWgL.png)<br />
+**xsf.conf - single_file_execution + Presetup (advanced options)**
+![venom shellcode v1.0.13](http://i.cubeupload.com/2wBpQf.png)<br />
 **Final sfx archive with icon changed**<br />
 ![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
 **Inside the sfx archive (open with winrar)**<br />
