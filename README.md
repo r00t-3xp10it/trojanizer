@@ -97,17 +97,23 @@
 <br /><br />
 
 ## Framework Screenshots
-**example of xsf.conf file**
+**xsf.conf - execute both files upon extraction**
 ![venom shellcode v1.0.13](http://i.cubeupload.com/QJ3D2L.png)<br />
-**Final sfx archive**<br />
+**xsf.conf - single_file_execution + Presetup advanced options**
+![venom shellcode v1.0.13](http://i.cubeupload.com/ZZy3sy.png)<br />
+**Final sfx archive with icon changed**<br />
 ![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
-**Inside the sfx archive**<br />
+**Inside the sfx archive (open with winrar)**<br />
 ![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/4xZdmZ.png)<br />
 
 
+<br /><br /><br />
+
+## Video tutorials
+![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/xdZ.png)<br />
+
 <br />
 
-
 ## -- Suspicious-Shell-Activity© (SSA) RedTeam develop @2017 --
-
+Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues
 

