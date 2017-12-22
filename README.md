@@ -23,7 +23,7 @@
     To make the archive less suspicious to target at execution time, trojanizer will
     try to replace the default icon(.ico) of the sfx file with a user-selected one.
 
-   **'Trojanizer will not build real trojans, but from target perspective it will behave like one'**<br />
+   **'Trojanizer will not build real trojans, but from target perspective, it will replicate trojan behavior'**<br />
    (execute the payload in background, while the legit application executes in foreground).
 
 
@@ -65,7 +65,7 @@
    Trojanizer can be configurated to execute a program + command before the extraction/execution
    of the two compressed files (SFX archive). This allow users to take advantage of pre-installed
    software to execute a remote command before the actual extraction occurs in target system.
-    **If active (ON), trojanizer will asks for the command to be executed**
+    **If active (ON), trojanizer will asks (sandbox) for the command to be executed**
 ![venom shellcode v1.0.13](http://i.cubeupload.com/ZseeuS.png)<br />
 
 
