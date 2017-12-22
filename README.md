@@ -74,7 +74,7 @@
    upon extraction, but sfx archives can not execute directly dll files, This setting allow
    users to input one batch script(.bat) that its going to be used to execute the dll payload.
    All that Trojanizer needs to Do its to instruct the SFX archive to extract both files and
-   them execute the script.bat (thats contains orders to execute your payload.dll).
+   them execute the script.bat (thats contains orders to execute payload.dll).
     **This setting will build sfx archives, but it does not behave like one trojan-horse**
 ![venom shellcode v1.0.13](http://i.cubeupload.com/ptouUv.png)<br />
 
