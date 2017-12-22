@@ -357,9 +357,10 @@ sleep 2
 #
 # random version numbers
 RAN_D=$(cat /dev/urandom | tr -dc '0-9' | fold -w 1 | head -n 1)
-RUN_T=$(cat /dev/urandom | tr -dc '0-9' | fold -w 2 | head -n 1)
+RUN_T=$(cat /dev/urandom | tr -dc '0-9' | fold -w 3 | head -n 1)
+FIN_F=$(cat /dev/urandom | tr -dc '0-9' | fold -w 1 | head -n 1)
 echo "; The sfx archive title" > $IPATH/bin/xsf.conf
-echo "Title=$N4m3 v$RAN_D.$RUN_T Corporate Edition" >> $IPATH/bin/xsf.conf
+echo "Title=$N4m3 v$RAN_D.$RUN_T.$FIN_F Corporate Edition" >> $IPATH/bin/xsf.conf
   #
   # use Presetup program/command to exec before extraction ..
   #
