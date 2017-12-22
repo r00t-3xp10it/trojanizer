@@ -5,13 +5,13 @@
 
 
 ## TROJANIZER
-    Version release : v1.0
+    Version release : v1.0 (Beta)
     Author : pedro ubuntu  [ r00t-3xp10it ]
     Codename: Troia_Revisited
     Distros Supported : Ubuntu, Kali, Mint, Parrot OS
     Suspicious-Shell-Activity (SSA) RedTeam develop @2017
 
-![venom shellcode v1.0.13](http://i.cubeupload.com/xLyAG8.png)
+![Trojanizer v1.0-Beta](http://i.cubeupload.com/xLyAG8.png)
 
 <br />
 
@@ -38,7 +38,7 @@
     |        in the 'settings' file before attempting to run the tool for the first time.     |
     |        That will instruct Trojanizer to install/run backend appl based on sys arch      |
     ╚─────────────────────────────────────────────────────────────────────────────────────────╝
-![venom shellcode v1.0.13](http://i.cubeupload.com/nIV8rl.png)<br />
+![Trojanizer v1.0-Beta](http://i.cubeupload.com/nIV8rl.png)<br />
 
 <br />
 
@@ -66,7 +66,7 @@
    of the two compressed files (SFX archive). This allow users to take advantage of pre-installed
    software to execute a remote command before the actual extraction occurs in target system.
     **If active (ON), trojanizer will asks (sandbox) for the command to be executed**
-![venom shellcode v1.0.13](http://i.cubeupload.com/ZseeuS.png)<br />
+![Trojanizer v1.0-Beta](http://i.cubeupload.com/ZseeuS.png)<br />
 
 
    **-- single_file_execution**<br />
@@ -76,7 +76,7 @@
    All that Trojanizer needs to Do its to instruct the SFX archive to extract both files and
    them execute the script.bat (thats contains orders to execute payload.dll).
     **This setting will build sfx archives, but it does not behave like one trojan**
-![venom shellcode v1.0.13](http://i.cubeupload.com/ptouUv.png)<br />
+![Trojanizer v1.0-Beta](http://i.cubeupload.com/ptouUv.png)<br />
 
 <br /><br /><br />
 
@@ -98,19 +98,19 @@
 
 ## Framework Screenshots
 **xsf.conf - execute both files upon extraction (trojan behavior)**
-![venom shellcode v1.0.13](http://i.cubeupload.com/QJ3D2L.png)<br />
+![Trojanizer v1.0-Beta](http://i.cubeupload.com/QJ3D2L.png)<br />
 **xsf.conf - single_file_execution + Presetup (advanced options)**
-![venom shellcode v1.0.13](http://i.cubeupload.com/2wBpQf.png)<br />
+![Trojanizer v1.0-Beta](http://i.cubeupload.com/2wBpQf.png)<br />
 **Final sfx archive with icon changed**<br />
-![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
+![Trojanizer v1.0-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
 **Inside the sfx archive (open with winrar)**<br />
-![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/4xZdmZ.png)<br />
+![Trojanizer v1.0-Beta](http://i.cubeupload.com/4xZdmZ.png)<br />
 
 
 <br /><br /><br />
 
 ## Video tutorials
-![venom shellcode v1.0.13-Beta](http://i.cubeupload.com/xdZ.png)<br />
+![Trojanizer v1.0-Beta](http://i.cubeupload.com/xdZ.png)<br />
 
 <br />
 
