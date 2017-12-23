@@ -1,6 +1,6 @@
 #!/bin/sh
 ##
-# Trojanizer | Version: v1.0 (Stable)
+# Trojanizer | Version: v1.1 (Stable)
 # Author: pedro ubuntu [ r00t-3xp10it ]
 # Distros Supported : Ubuntu, Kali, Parrot
 # Suspicious-Shell-Activity (SSA) RedTeam develop @2017
@@ -42,7 +42,7 @@ Reset="${Escape}[0m";
 #
 # Framework variable declarations
 #
-VeR="1.0" # Framework version
+VeR="1.1" # Framework version
 IPATH=`pwd` # store Framework full path
 HoME=`echo ~` # store home variable
 CnA="Troia_Revisited" # Framework codename display
@@ -98,10 +98,19 @@ cat << !
 
 
    -- FIRST TIME RUN
-   1 - sudo chmod +x Trojanizer.sh
-   2 - nano settings
-   3 - sudo ./Trojanizer.sh
+    1º - Set execution permition
+         cd trojanizer
+         sudo chmod +x *.sh
 
+    2º - config framework
+         nano settings
+
+    3º - Run main tool
+         sudo ./Trojanizer.sh
+
+
+    -- REPORT BUGS
+    https://github.com/r00t-3xp10it/trojanizer/issues
 !
    exit
     ;;
@@ -113,9 +122,10 @@ cat << !
 -- Supported: Kali, Ubuntu, Parrot
 ---
 
-   Trojanizer Version: $VeR
-   Arch selected     : $ArCh
-   Codename          : $CnA
+   Trojanizer Version  : $VeR
+   Local Arch selected : $ArCh
+   Version Codename    : $CnA
+   Report Bugs (github): https://github.com/r00t-3xp10it/trojanizer/issues
 !
    exit
     ;;
@@ -267,7 +277,7 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
    Str=`grep -oE '[^/]+$' rep.log` > /dev/null 2>&1
    Ext=`echo $Str | cut -d '.' -f2` > /dev/null 2>&1
    rm rep.log > /dev/null 2>&1
-   if [ "$SIN_GL" = "OFF" ]; then
+   if [ "$SIN_GL" = "ON" ]; then
      echo "all extensions are allowed in 'single_file_execution'" > /dev/null 2>&1
    else
      #

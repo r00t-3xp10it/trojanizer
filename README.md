@@ -1,29 +1,30 @@
-[![Version](https://img.shields.io/badge/Trojanizer-v1.0-brightgreen.svg?maxAge=259200)]()
+[![Version](https://img.shields.io/badge/Trojanizer-v1.1-brightgreen.svg?maxAge=259200)]()
 [![Stage](https://img.shields.io/badge/Release-Beta-orange.svg)]()
-[![Build](https://img.shields.io/badge/Supported_OS-Linux-orange.svg)]()
+[![Build](https://img.shields.io/badge/Supported_OS-Ubuntu,Kali,Mint,Parrot-blue.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
 
 ## TROJANIZER
-    Version release : v1.0 (Beta)
+    Version release : v1.1 (Beta)
     Author : pedro ubuntu  [ r00t-3xp10it ]
     Codename: Troia_Revisited
     Distros Supported : Ubuntu, Kali, Mint, Parrot OS
     Suspicious-Shell-Activity (SSA) RedTeam develop @2017
 
-![Trojanizer v1.0-Beta](http://i.cubeupload.com/xLyAG8.png)
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/xLyAG8.png)
 
 <br />
 
 ## FRAMEWORK DESCRIPTION
-    The Trojanizer tool uses WinRAR (SFX) to compress the two files inputed by user,
+    The Trojanizer tool uses WinRAR (SFX) to compress the two files input by user,
     and transforms it into an SFX executable(.exe) archive. The sfx archive when
-    executed it will run both files (our payload and the legit appl inputed).
+    executed it will run both files (our payload and the legit appl at the same time).
 
     To make the archive less suspicious to target at execution time, trojanizer will
-    try to replace the default icon(.ico) of the sfx file with a user-selected one.
+    try to replace the default icon(.ico) of the sfx file with a user-selected one,
+    and supress all SFX archive sandbox msgs (Silent=1 | Overwrite=1).
 
-   **'Trojanizer will not build real trojans, but from target perspective, it will replicate trojan behavior'**<br />
+   **'Trojanizer will not build trojans, but from target perspective, it replicates the trojan behavior'**<br />
    (execute the payload in background, while the legit application executes in foreground).
 
 
@@ -34,17 +35,21 @@
     "Trojanizer.sh will download/install all dependencies as they are needed"
     ╔─────────────────────────────────────────────────────────────────────────────────────────╗
     |                                        WARNING:                                         |
-    |        It is recomended to edit and config the option: SYSTEM_ARCH=[your_sys_arch]      |
+    |        It is recomended to edit and config the option: SYSTEM_ARCH=[ your_sys_arch ]    |
     |        in the 'settings' file before attempting to run the tool for the first time.     |
     |        That will instruct Trojanizer to install/run backend appl based on sys arch      |
     ╚─────────────────────────────────────────────────────────────────────────────────────────╝
-![Trojanizer v1.0-Beta](http://i.cubeupload.com/nIV8rl.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/nIV8rl.png)<br />
 
 <br />
 
 ## PAYLOADS (agents) ACCEPTED
     .exe | .bat | .vbs | .ps1
     "All applications that windows/SFX can auto-extract-execute"
+
+    HINT: If sellected 'SINGLE_EXEC=ON' in the settings file, then
+    trojanizer will accept any kind of extension to be inputed. but it
+    will depends on a script.bat to execute the payload after extraction.
 
 <br />
 
@@ -66,7 +71,7 @@
    of the two compressed files (SFX archive). This allow users to take advantage of pre-installed
    software to execute a remote command before the actual extraction occurs in target system.
     **If active (ON), trojanizer will asks (sandbox) for the command to be executed**
-![Trojanizer v1.0-Beta](http://i.cubeupload.com/ZseeuS.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/ZseeuS.png)<br />
 
 
    **-- single_file_execution**<br />
@@ -76,7 +81,7 @@
    All that Trojanizer needs to Do its to instruct the SFX archive to extract both files and
    them execute the script.bat (thats contains orders to execute payload.dll).
     **This setting will build sfx archives, but it does not behave like one trojan**
-![Trojanizer v1.0-Beta](http://i.cubeupload.com/ptouUv.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/ptouUv.png)<br />
 
 <br /><br /><br />
 
@@ -98,22 +103,25 @@
 
 ## Framework Screenshots
 **xsf.conf - execute both files upon extraction (trojan behavior)**
-![Trojanizer v1.0-Beta](http://i.cubeupload.com/QJ3D2L.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/QJ3D2L.png)<br />
 **xsf.conf - single_file_execution + Presetup (advanced options)**
-![Trojanizer v1.0-Beta](http://i.cubeupload.com/2wBpQf.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/2wBpQf.png)<br />
 **Final sfx archive with icon changed**<br />
-![Trojanizer v1.0-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
 **Inside the sfx archive (open with winrar)**<br />
-![Trojanizer v1.0-Beta](http://i.cubeupload.com/4xZdmZ.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/4xZdmZ.png)<br />
 
 
 <br /><br /><br />
 
 ## Video tutorials
-![Trojanizer v1.0-Beta](http://i.cubeupload.com/xdZ.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/xdZ.png)<br />
+
+
+### Report bugs:
+DIRECT_URL: https://github.com/r00t-3xp10it/trojanizer/issues
 
 <br />
 
 ## -- Suspicious-Shell-Activity© (SSA) RedTeam develop @2017 --
-Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues
 

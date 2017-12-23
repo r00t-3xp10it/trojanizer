@@ -12,9 +12,9 @@
 
 
 
-### Local system arch (32bit/64bit)
-# This next setting forces the main tool (Trojanizer.sh) to use WINE32
-# or WINE64 command syntax to install dependencies or run internal commands.
+### Local (attacker) system arch (32bit/64bit)
+# This next setting forces the main tool (Trojanizer.sh) to use 'wine32'
+# or 'wine64' command syntax to install dependencies or run internal commands.
 # values accepted are: x64 or x86
 ---------------
 SYSTEM_ARCH=x86
@@ -30,8 +30,9 @@ USE_LOGO=OFF
 
 
 ### WinRAR Presetup sfx funtion to exec program/command before extraction
-# HINT: program must allready exists on disk (target system) example:
+# HINT: The program must allready exists on target disk. Syntax examples:
 # powershell.exe -nop -wind hidden -Exec Bypass -noni -enc TfD3DvcHtLhiSmoT==
+# cmd.exe /c msg * 'Remote Code Execution using SFX presetup setting'
 # values accepted are: OFF or ON
 -------------
 PRE_SETUP=OFF
@@ -39,10 +40,11 @@ PRE_SETUP=OFF
 
 
 ### Single_file_execution, Lets look at the follow scenario:
-# you have a dll payload to input to execute upon extraction,
-# but sfx archives can not execute directly dll files ..
-# This setting allow users to input one batch script(.bat)
-# that its going to be used to execute the dll payload.
+# You have a dll payload to input that you need to execute upon extraction,
+# but sfx archives can not execute directly dll files, This setting allow
+# users to input one batch script(.bat) that its going to be used to execute
+# the dll payload. All that Trojanizer needs to Do its to instruct the SFX archive
+# to extract both files and execute the script.bat (thats contains orders to execute payload.dll).
 # values accepted are: OFF or ON
 ---------------
 SINGLE_EXEC=OFF
@@ -50,7 +52,7 @@ SINGLE_EXEC=OFF
 
 
 ### Wine drive_c full install path (local)
-# HINT: execute winecfg to build the required folders or
+# HINT: execute 'winecfg' to build the required folders or
 # change this value to point to your wine drive_c install path
 -----------------------------
 WINE_PATH=/root/.wine/drive_c
@@ -58,7 +60,7 @@ WINE_PATH=/root/.wine/drive_c
 
 
 ### WinRAR.exe full install path (inside-wine)
-# HINT: based on the local system arch used,
+# HINT: based on the local system arch used (local),
 # winrar.exe migth be installed under: Program Files OR Program Files(x86)
 ---------------------------------------------------------------
 WINRAR_PATH=/root/.wine/drive_c/Program Files/WinRAR/WinRAR.exe
