@@ -1,6 +1,6 @@
 [![Version](https://img.shields.io/badge/Trojanizer-v1.1-brightgreen.svg?maxAge=259200)]()
 [![Stage](https://img.shields.io/badge/Release-Beta-orange.svg)]()
-[![Build](https://img.shields.io/badge/Supported_OS-Ubuntu,Kali,Mint,Parrot-blue.svg)]()
+[![Build](https://img.shields.io/badge/Supported_OS-Ubuntu,Kali,Mint,Parrot-brightgreen.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
 
@@ -108,8 +108,10 @@
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/2wBpQf.png)<br />
 **Final sfx archive with icon changed**<br />
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
-**Inside the sfx archive (open with winrar)**<br />
+**Inside the sfx archive (open with winrar) - trojan behavior**<br />
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/4xZdmZ.png)<br />
+**Inside the sfx archive (open with winrar) - single_file_execution**<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/IGNbwP.png)<br />
 
 
 <br /><br /><br />
@@ -119,7 +121,7 @@
 
 
 ### Report bugs:
-DIRECT_URL: https://github.com/r00t-3xp10it/trojanizer/issues
+https://github.com/r00t-3xp10it/trojanizer/issues
 
 <br />
 

@@ -327,7 +327,7 @@ fi
 #
 if [ "$PRES" = "ON" ]; then
   MyPr=$(zenity --title="☠ PRESETUP FUNTION ☠" --text "Presetup sfx funtion to exec program/command before extraction\nexample: powershell.exe -nop -wind hidden -Exec Bypass -noni -enc TfD3DvcHtLhiSmoT==" --entry --width 300) > /dev/null 2>&1
-  echo ${YellowF}['!']${white}" Using WinRAR SFX Presetup= switch .."${Reset};
+  echo ${BlueF}[☆]${white}" Using WinRAR SFX Presetup switch .."${Reset};
   sleep 2
 fi
 
