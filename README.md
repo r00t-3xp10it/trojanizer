@@ -1,6 +1,6 @@
 [![Version](https://img.shields.io/badge/Trojanizer-v1.1-brightgreen.svg?maxAge=259200)]()
 [![Stage](https://img.shields.io/badge/Release-Beta-orange.svg)]()
-[![Build](https://img.shields.io/badge/Supported_OS-Ubuntu,Kali,Mint,Parrot-brightgreen.svg)]()
+[![Build](https://img.shields.io/badge/Supported_OS-Ubuntu,Kali,Mint,Parrot-blue.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
 
