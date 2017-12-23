@@ -465,7 +465,7 @@ rm $IPATH/output/$ST_O > /dev/null 2>&1
 rm $IPATH/output/$ST_D > /dev/null 2>&1
 echo ${GreenF}[☆]${white}" Trojanizer : All tasks completed .."${Reset};
 zenity --info --title="☠ Trojanizer ☠" --text "Your sfx archive:\n'$IPATH/output/$N4m3.exe'" --width 380 > /dev/null 2>&1
-echo ${GreenF}[☆]${white}"Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
+echo ${GreenF}[☆]${white}" Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
 cd $IPATH
 exit
 
@@ -479,7 +479,7 @@ else
     #
     echo ""
     echo ${GreenF}[☆]${white} Trojanizer${RedF}::${white}v$VeR${RedF}::${white}SuspiciousShellActivity©${RedF}::${white}RedTeam${RedF}::${white}2017${Reset};
-    echo ${GreenF}[☆]${white}"Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
+    echo ${GreenF}[☆]${white}" Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
 exit
 fi
 
