@@ -267,6 +267,9 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
    Str=`grep -oE '[^/]+$' rep.log` > /dev/null 2>&1
    Ext=`echo $Str | cut -d '.' -f2` > /dev/null 2>&1
    rm rep.log > /dev/null 2>&1
+   if [ "$SIN_GL" = "OFF" ]; then
+     echo "all extensions are allowed in 'single_file_execution'" > /dev/null 2>&1
+   else
      #
      # Check if agent (payload) inputed its compatible with trojanizer tool
      #
@@ -278,6 +281,7 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
        sleep 2
        exit
      fi
+   fi
 
 
 #
