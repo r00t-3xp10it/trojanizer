@@ -86,14 +86,15 @@ cat << !
 -- Supported: Kali, Ubuntu, Parrot
 ---
 
-    The Trojanizer tool uses WinRAR (SFX) to compress the two files inputed by user,
+    The Trojanizer tool uses WinRAR (SFX) to compress the two files input by user,
     and transforms it into an SFX executable(.exe) archive. The sfx archive when
-    executed it will run both files (our payload and the legit appl inputed).
+    executed it will run both files (our payload and the legit appl at the same time).
 
     To make the archive less suspicious to target at execution time, trojanizer will
-    try to replace the default icon(.ico) of the sfx file with a user-selected one.
+    try to replace the default icon(.ico) of the sfx file with a user-selected one,
+    and supress all SFX archive sandbox msgs (Silent=1 | Overwrite=1).
 
-   'Trojanizer will not build real trojans, but from target perspective, it will replicate trojan behavior'
+   'Trojanizer will not build trojans, but from target perspective, it replicates the trojan behavior'
    (execute the payload in background, while the legit application executes in foreground).
 
 
@@ -108,9 +109,6 @@ cat << !
     3º - Run main tool
          sudo ./Trojanizer.sh
 
-
-    -- REPORT BUGS
-    https://github.com/r00t-3xp10it/trojanizer/issues
 !
    exit
     ;;
@@ -465,7 +463,7 @@ rm $IPATH/output/$ST_O > /dev/null 2>&1
 rm $IPATH/output/$ST_D > /dev/null 2>&1
 echo ${GreenF}[☆]${white}" Trojanizer : All tasks completed .."${Reset};
 zenity --info --title="☠ Trojanizer ☠" --text "Your sfx archive:\n'$IPATH/output/$N4m3.exe'" --width 380 > /dev/null 2>&1
-echo ${GreenF}[☆]${white}" Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
+echo ${GreenF}[☆]${white}" Report bugs${RedF}:${white} https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
 cd $IPATH
 exit
 
@@ -479,7 +477,7 @@ else
     #
     echo ""
     echo ${GreenF}[☆]${white} Trojanizer${RedF}::${white}v$VeR${RedF}::${white}SuspiciousShellActivity©${RedF}::${white}RedTeam${RedF}::${white}2017${Reset};
-    echo ${GreenF}[☆]${white}" Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
+    echo ${GreenF}[☆]${white}" Report bugs${RedF}:${white} https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
 exit
 fi
 
