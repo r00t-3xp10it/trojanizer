@@ -302,7 +302,7 @@ else
   legit_path=$(zenity --title "☠ LEGIT APPLICATION TO TROJANIZE ☠" --filename=$IPATH --file-selection --text "chose legit application/agent") > /dev/null 2>&1
 fi
 N4m3=$(zenity --title="☠ Input SFX FILENAME ☠" --text "example: AVG_installer" --entry --width 300) > /dev/null 2>&1
-IcOn=$(zenity --list --title "☠ ICON REPLACEMENT  ☠" --text "Chose one icon from the list." --radiolist --column "Pick" --column "Option" TRUE "Windows-black.ico" FALSE "Windows-Metro.ico" FALSE "Microsoft-Excel.ico" FALSE "Microsoft-Word.ico" FALSE "Windows-Logo.ico" FALSE "Windows-Store.ico" FALSE "Input your own icon" --width 330 --height 330) > /dev/null 2>&1
+IcOn=$(zenity --list --title "☠ ICON REPLACEMENT  ☠" --text "Chose one icon from the list." --radiolist --column "Pick" --column "Option" TRUE "Windows-black.ico" FALSE "Windows-Metro.ico" FALSE "Microsoft-Excel.ico" FALSE "Microsoft-Word.ico" FALSE "Windows-Logo.ico" FALSE "Windows-Store.ico" FALSE "Steam-logo.ico" FALSE "AVG.ico" FALSE "Input your own icon" --width 330 --height 390) > /dev/null 2>&1
 # Input your own icon.ico ?
 if [ "$IcOn" = "Input your own icon" ]; then
   Icon_path=$(zenity --title "☠ INPUT YOUR OWN ICON (.ico) FILE ☠" --filename=$IPATH/bin --file-selection --text "chose the icon.ico to use ..") > /dev/null 2>&1
