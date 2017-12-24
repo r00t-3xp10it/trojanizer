@@ -117,7 +117,8 @@
 <br /><br /><br />
 
 ## Video tutorials
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/xdZ.png)<br />
+**Trojanizer - single_file_execution (not trojan behavior)**
+![Trojanizer v1.1-Beta](https://www.youtube.com/watch?v=Ze0JkVtKbns)<br />
 
 
 ### Report bugs:
