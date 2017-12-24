@@ -276,6 +276,7 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
    Ext=`echo $Str | cut -d '.' -f2` > /dev/null 2>&1
    rm rep.log > /dev/null 2>&1
    if [ "$SIN_GL" = "ON" ]; then
+     pa_in="COMPATIBLE"
      echo "all extensions are allowed in 'single_file_execution'" > /dev/null 2>&1
    else
      #
