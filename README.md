@@ -144,6 +144,10 @@
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/QJ3D2L.png)<br />
 **xsf.conf - single_file_execution + Presetup (advanced options)**
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/2wBpQf.png)<br />
+**xsf.conf - single_file_execution + Presetup + appl_whitelisting_bypass (certutil)**
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/HxEh1J.png)<br />
+**xsf.conf - single_file_execution + Presetup + appl_whitelisting_bypass (powershell IEX)**
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/dU1DoF.png)<br />
 **Final sfx archive with icon changed**<br />
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
 **Inside the sfx archive (open with winrar) - trojan behavior**<br />
