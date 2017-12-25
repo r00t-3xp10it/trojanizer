@@ -162,16 +162,17 @@
 **Trojanizer - single_file_execution (not trojan behavior)**<br />
 https://www.youtube.com/watch?v=Ze0JkVtKbns<br />
 
+<br />
 
 ### Report bugs:
 https://github.com/r00t-3xp10it/trojanizer/issues
 
 <br />
 
-### Special thanks:
+## Special thanks:
 **@subTee** | **@enigma0x3**
 
-Credits: http://acritum.com/software/manuals/winrar/<br />
+Referencies: http://acritum.com/software/manuals/winrar/<br />
 https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/<br />
 
 
