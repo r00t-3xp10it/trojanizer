@@ -172,7 +172,8 @@ https://github.com/r00t-3xp10it/trojanizer/issues
 ## Special thanks:
 **@subTee** | **@enigma0x3**
 
-Referencies: http://acritum.com/software/manuals/winrar/<br />
+Referencies:<br />
+http://acritum.com/software/manuals/winrar/<br />
 https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/<br />
 
 
