@@ -37,7 +37,6 @@
     |                                        WARNING:                                         |
     |        It is recomended to edit and config the option: SYSTEM_ARCH=[ your_sys_arch ]    |
     |        in the 'settings' file before attempting to run the tool for the first time.     |
-    |        That will instruct Trojanizer to install/run backend appl based on sys arch      |
     ╚─────────────────────────────────────────────────────────────────────────────────────────╝
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/nIV8rl.png)<br />
 
