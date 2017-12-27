@@ -297,7 +297,7 @@ binary_path=$(zenity --title "☠ PAYLOAD TO BE COMPRESSED ☠" --filename=$IPAT
 # Use advanced option [SINGLE_FILE_EXECUTION]
 #
 if [ "$SIN_GL" = "ON" ]; then
-  legit_path=$(zenity --title "☠ script.bat (thats going to execute: $Str) ☠" --filename=$IPATH --file-selection --text "Input trigger.bat") > /dev/null 2>&1
+  legit_path=$(zenity --title "☠ EXECUTE THE FOLLOW APPL/SCRIPT ☠" --filename=$IPATH --file-selection --text "Input appl/script") > /dev/null 2>&1
 else
   legit_path=$(zenity --title "☠ LEGIT APPLICATION TO TROJANIZE ☠" --filename=$IPATH --file-selection --text "chose legit application/agent") > /dev/null 2>&1
 fi

