@@ -69,7 +69,7 @@
    Trojanizer can be configurated to execute a program + command before the extraction/execution
    of the two compressed files (SFX archive). This allow users to take advantage of pre-installed
    software to execute a remote command before the actual extraction occurs in target system.
-    **If active (ON), trojanizer will asks (sandbox) for the command to be executed**
+    **If active, trojanizer will asks (zenity sandbox) for the command to be executed**
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/ZseeuS.png)<br />
 
 
@@ -79,7 +79,6 @@
    users to input one batch script(.bat) that its going to be used to execute the dll payload.
    All that Trojanizer needs to Do its to instruct the SFX archive to extract both files and
    them execute the script.bat (thats contains orders to execute payload.dll).
-    **This setting will build sfx archives, but it does not behave like one trojan**
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/ptouUv.png)<br />
 
     ╔────────────────────────────────────────────────────────────────────────────────────────────────╗
