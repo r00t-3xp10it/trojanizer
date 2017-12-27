@@ -51,7 +51,7 @@
 
 <br />
 
-## LEGIT APPLICATIONS ACCEPTED
+## LEGIT APPLICATIONS ACCEPTED (decoys)
     .exe | .bat | .vbs | .ps1 | .jpg | .bmp | .doc | .ppt | etc ..
     "All applications that windows/SFX can auto-extract-execute"
 
