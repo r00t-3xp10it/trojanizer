@@ -44,10 +44,10 @@
 
 ## PAYLOADS (agents) ACCEPTED
     .exe | .bat | .vbs | .ps1
-    "All applications that windows/SFX can auto-extract-execute"
+    "All payloads that windows/SFX can auto-extract-execute"
 
-    HINT: If sellected 'SINGLE_EXEC=ON' in the settings file, then
-    trojanizer will accept any kind of extension to be inputed.
+    HINT: If sellected 'SINGLE_EXEC=ON' in the settings file,
+    then trojanizer will accept any kind of extension to be inputed.
 
 <br />
 
