@@ -86,7 +86,7 @@
     ╔───────────────────────────────────────────────────────────────────────────────────────────────╗
     |  single_file_execution switch default behavior its to compress the two files inputed by user  |
     |  but only execute one of them at extraction time (the 2º file inputed will be executed) ..    |
-    | This behavior can be used together with Presetup switch and appl_white_listing_bypass methods |
+    |  This behavior can be used together with Presetup switch and appl_whitelisting_bypass methods.|
     ╚───────────────────────────────────────────────────────────────────────────────────────────────╝
 
 <br /><br /><br />
