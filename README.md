@@ -83,11 +83,11 @@
     **This setting will build sfx archives, but it does not behave like one trojan**
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/ptouUv.png)<br />
 
-    ╔───────────────────────────────────────────────────────────────────────────────────────────────╗
-    |  single_file_execution switch default behavior its to compress the two files inputed by user  |
-    |  but only execute one of them at extraction time (the 2º file inputed will be executed) ..    |
-    |  This behavior can be used together with Presetup switch and appl_whitelisting_bypass methods.|
-    ╚───────────────────────────────────────────────────────────────────────────────────────────────╝
+    ╔────────────────────────────────────────────────────────────────────────────────────────────────╗
+    |  single_file_execution switch default behavior its to compress the two files inputed by user   |
+    |  but only execute one of them at extraction time (the 2º file inputed will be executed) ..     |
+    | This behavior can be used together with Presetup switch and appl_whitelisting_bypass oneliners |
+    ╚────────────────────────────────────────────────────────────────────────────────────────────────╝
 
 <br /><br /><br />
 
