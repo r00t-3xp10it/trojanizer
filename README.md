@@ -55,7 +55,7 @@
     .exe | .bat | .vbs | .ps1 | .jpg | .bmp | .doc | .ppt | etc ..
     "All applications that windows/SFX can auto-extract-execute"
 
-<br />
+<br /><br /><br />
 
 ## ADVANCED SETTINGS
     ╔─────────────────────────────────────────────────────────────────────────────────────────╗
@@ -86,7 +86,7 @@
     | This behavior can be used together with Presetup switch and appl_whitelisting_bypass oneliners |
     ╚────────────────────────────────────────────────────────────────────────────────────────────────╝
 
-<br /><br /><br />
+<br /><br />
 
 ## TROJANIZER AND APPL WHITELISTING BYPASSES
     ╔────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╗
@@ -147,7 +147,7 @@
     4º - Run main tool
          sudo ./Trojanizer.sh
 
-<br /><br />
+<br /><br /><br />
 
 ## Framework Screenshots
 **xsf.conf - execute both files upon extraction (trojan behavior)**
@@ -172,10 +172,6 @@
 **Trojanizer - single_file_execution (not trojan behavior)**<br />
 https://www.youtube.com/watch?v=Ze0JkVtKbns<br />
 
-<br />
-
-### Report bugs:
-https://github.com/r00t-3xp10it/trojanizer/issues
 
 <br />
 
@@ -187,5 +183,7 @@ http://acritum.com/software/manuals/winrar/<br />
 https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/<br />
 
 
+### Report bugs:
+https://github.com/r00t-3xp10it/trojanizer/issues
 ## -- Suspicious-Shell-Activity© (SSA) RedTeam develop @2017 --
 
