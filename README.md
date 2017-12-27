@@ -70,7 +70,7 @@
    of the two compressed files (SFX archive). This allow users to take advantage of pre-installed
    software to execute a remote command before the actual extraction occurs in target system.
     **If active, trojanizer will asks (zenity sandbox) for the command to be executed**
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/ZseeuS.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/8hDu1l.png)<br />
 
 
    **-- single_file_execution**<br />
@@ -79,7 +79,7 @@
    users to input one batch script(.bat) that its going to be used to execute the dll payload.
    All that Trojanizer needs to Do its to instruct the SFX archive to extract both files and
    them execute the script.bat
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/ptouUv.png)<br />
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/38sxgB.png)<br />
 
     ╔────────────────────────────────────────────────────────────────────────────────────────────────╗
     |  single_file_execution switch default behavior its to compress the two files inputed by user   |
