@@ -83,20 +83,25 @@
     **This setting will build sfx archives, but it does not behave like one trojan**
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/ptouUv.png)<br />
 
+    ╔───────────────────────────────────────────────────────────────────────────────────────────────╗
+    |  single_file_execution switch default behavior its to compress the two files inputed by user  |
+    |  but only execute one of them at extraction time (the 2º file inputed will be executed) ..    |
+    | This behavior can be used together with Presetup switch and appl_white_listing_bypass methods |
+    ╚───────────────────────────────────────────────────────────────────────────────────────────────╝
 
 <br /><br /><br />
 
 ## TROJANIZER AND APPL WHITELISTING BYPASSES
     ╔────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╗
     |   A lot of awesome work has been done by a lot of people, especially @subTee, regarding  application whitelisting  |
-    |   bypass, which is eventually what we want: execute arbitrary code abusing Microsoft built-in binaries.            |
+    |   bypass, which is eventually what we want here: execute arbitrary code abusing Microsoft built-in binaries.       |
     | https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/ |
     ╚────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
 
 
 
-    The follow exercise describes how to use trojanizer and Presetup sfx build-in switch to drop and execute
-    any payload using 'certutil' or 'powershell' appl whitelisting bypass method discover by @subTee and @enigma0x3 ..
+    The follow exercise describes how to use trojanizer single_file_execution and Presetup sfx built-in switchs
+    to drop and execute any payload using 'certutil' or 'powershell' appl whitelisting bypass oneliners ..
 
 
     1º - use metasploit to build our payload
