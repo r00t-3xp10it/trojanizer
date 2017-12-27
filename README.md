@@ -33,10 +33,9 @@
 ## DEPENDENCIES (backend applications)
     Zenity (bash-GUIs) | Wine (x86|x64) | WinRAr.exe (installed-in-wine)
     "Trojanizer.sh will download/install all dependencies as they are needed"
-    ╔────────────────────────────────────────────────────────────────────────────────────────────╗
-    |        It is recomended to edit and config the option: SYSTEM_ARCH=[ your_sys_arch ]       |
-    |        in the 'settings' file before attempting to run the tool for the first time.        |
-    ╚────────────────────────────────────────────────────────────────────────────────────────────╝
+
+**It is recomended to edit and config the option: SYSTEM_ARCH=[ your_sys_arch ]**<br />
+**in the 'settings' file before attempting to run the tool for the first time.**<br />
 ![Trojanizer v1.1-Beta](http://i.cubeupload.com/nIV8rl.png)<br />
 
 <br />
