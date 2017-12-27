@@ -94,8 +94,8 @@
     | https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/ |
     ╚────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
 
-    The follow exercise describes how to use trojanizer single_file_execution and Presetup sfx built-in
-    switchs to drop and execute any payload using 'certutil' or 'powershell' appl whitelisting bypass oneliners ..
+    The follow exercise describes how to use trojanizer 'single_file_execution' and 'Presetup' advanced switchs to
+    drop (remote download) and execute any payload using 'certutil' or 'powershell' appl_whitelisting_bypass oneliners ..
 
 
     1º - use metasploit to build our payload
