@@ -48,8 +48,7 @@
     "All applications that windows/SFX can auto-extract-execute"
 
     HINT: If sellected 'SINGLE_EXEC=ON' in the settings file, then
-    trojanizer will accept any kind of extension to be inputed. but it
-    will depends on a script.bat to execute the payload after extraction.
+    trojanizer will accept any kind of extension to be inputed.
 
 <br />
 
