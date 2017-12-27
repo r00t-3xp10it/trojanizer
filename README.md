@@ -97,7 +97,6 @@
     ╚────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╝
 
 
-
     The follow exercise describes how to use trojanizer single_file_execution and Presetup sfx built-in
     switchs to drop and execute any payload using 'certutil' or 'powershell' appl whitelisting bypass oneliners ..
 
