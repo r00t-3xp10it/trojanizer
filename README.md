@@ -180,7 +180,7 @@ https://www.youtube.com/watch?v=BIn6_ccZrI0<br />
 <br />
 
 ## Special thanks:
-**@subTee** | **@enigma0x3**
+**@subTee** | **@enigma0x3** | **@H4d3s (SSA)**
 
 Referencies:<br />
 http://acritum.com/software/manuals/winrar/<br />
