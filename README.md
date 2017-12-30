@@ -173,6 +173,10 @@
 https://www.youtube.com/watch?v=Ze0JkVtKbns<br />
 
 
+**Trojanizer - AVG anti-virus fake installer (trojan behavior)**<br />
+https://www.youtube.com/watch?v=BIn6_ccZrI0<br />
+
+
 <br />
 
 ## Special thanks:
