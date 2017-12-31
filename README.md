@@ -27,6 +27,7 @@
    **'Trojanizer will not build trojans, but from target perspective, it replicates the trojan behavior'**<br />
    (execute the payload in background, while the legit application executes in foreground).
 
+![Trojanizer v1.1-Beta](http://i.cubeupload.com/RBwTlq.png)<br />
 
 <br /><br /><br />
 
@@ -169,13 +170,12 @@
 <br /><br /><br />
 
 ## Video tutorials
-**Trojanizer - single_file_execution (not trojan behavior)**<br />
-https://www.youtube.com/watch?v=Ze0JkVtKbns<br />
-
-
 **Trojanizer - AVG anti-virus fake installer (trojan behavior)**<br />
 https://www.youtube.com/watch?v=BIn6_ccZrI0<br />
 
+
+**Trojanizer - single_file_execution (not trojan behavior)**<br />
+https://www.youtube.com/watch?v=Ze0JkVtKbns<br />
 
 <br />
 
