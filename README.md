@@ -5,13 +5,13 @@
 
 
 ## TROJANIZER
-    Version release : v1.1 (Beta)
+    Version release : v1.1 (Stable)
     Author : pedro ubuntu  [ r00t-3xp10it ]
     Codename: Troia_Revisited
     Distros Supported : Ubuntu, Kali, Mint, Parrot OS
     Suspicious-Shell-Activity (SSA) RedTeam develop @2017
 
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/xLyAG8.png)
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/xLyAG8.png)
 
 <br />
 
@@ -27,7 +27,7 @@
    **'Trojanizer will not build trojans, but from target perspective, it replicates the trojan behavior'**<br />
    (execute the payload in background, while the legit application executes in foreground).
 
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/RBwTlq.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/RBwTlq.png)<br />
 
 <br /><br /><br />
 
@@ -38,7 +38,7 @@
     |        It is recomended to edit and config the option: SYSTEM_ARCH=[ your_sys_arch ]       |
     |        in the 'settings' file before attempting to run the tool for the first time.        |
     ╚────────────────────────────────────────────────────────────────────────────────────────────╝
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/nIV8rl.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/nIV8rl.png)<br />
 
 <br />
 
@@ -68,7 +68,7 @@
    of the two compressed files (SFX archive). This allow users to take advantage of pre-installed
    software to execute a remote command before the actual extraction occurs in target system.
     **If active, trojanizer will asks (zenity sandbox) for the command to be executed**
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/8hDu1l.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/8hDu1l.png)<br />
 
 
    **-- single_file_execution**<br />
@@ -77,7 +77,7 @@
    users to input one batch script(.bat) that its going to be used to execute the dll payload.
    All that Trojanizer needs to Do its to instruct the SFX archive to extract both files and
    them execute the script.bat
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/38sxgB.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/38sxgB.png)<br />
 
     ╔────────────────────────────────────────────────────────────────────────────────────────────────╗
     |  single_file_execution switch default behavior its to compress the two files inputed by user   |
@@ -152,19 +152,19 @@
 
 ## Framework Screenshots
 **xsf.conf - execute both files upon extraction (trojan behavior)**
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/QJ3D2L.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/QJ3D2L.png)<br />
 **xsf.conf - single_file_execution + Presetup (advanced options)**
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/2wBpQf.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/2wBpQf.png)<br />
 **xsf.conf - single_file_execution + Presetup + appl_whitelisting_bypass (certutil)**
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/HxEh1J.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/HxEh1J.png)<br />
 **xsf.conf - single_file_execution + Presetup + appl_whitelisting_bypass (powershell IEX)**
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/dU1DoF.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/dU1DoF.png)<br />
 **Final sfx archive with icon changed**<br />
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/L1r4hg.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/L1r4hg.png)<br />
 **Inside the sfx archive (open with winrar) - trojan behavior**<br />
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/4xZdmZ.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/4xZdmZ.png)<br />
 **Inside the sfx archive (open with winrar) - single_file_execution**<br />
-![Trojanizer v1.1-Beta](http://i.cubeupload.com/IGNbwP.png)<br />
+![Trojanizer v1.1-Stable](http://i.cubeupload.com/IGNbwP.png)<br />
 
 
 <br /><br /><br />
@@ -177,13 +177,14 @@ https://www.youtube.com/watch?v=BIn6_ccZrI0<br />
 **Trojanizer - single_file_execution (not trojan behavior)**<br />
 https://www.youtube.com/watch?v=Ze0JkVtKbns<br />
 
-<br />
+<br /><br />
 
 ## Special thanks:
 **@subTee** | **@enigma0x3** | **@H4d3s (SSA)**
 
 Referencies:<br />
 http://acritum.com/software/manuals/winrar/<br />
+https://blog.conscioushacker.io/index.php/2017/11/17/application-whitelisting-bypass-msbuild-exe/<br />
 https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/<br />
 
 
